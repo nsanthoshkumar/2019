@@ -25,11 +25,11 @@ Three types of Tables
 * Buffer Pools: Buffer pools are used to cache the data pages in memory. Once the page is placed in buffer pool,
   querying to disk will be avoided.
 
-DEFAULTBP is the default buffer pool created whenever a database is created.
-CREATE BUFFERPOOL is used to create buffer pool. Later, a table space can be assigned to the buffer pool. 
-SYSCAT.BUFFERPOOLS to access the buffer pools defined in database
+   DEFAULTBP is the default buffer pool created whenever a database is created.
+   CREATE BUFFERPOOL is used to create buffer pool. Later, a table space can be assigned to the buffer pool. 
+   SYSCAT.BUFFERPOOLS to access the buffer pools defined in database
 
-`Question: Creating multiple buffer pools and assigning multiple table spaces to different buffer pools will increase the performance?`
+   `Question: Creating multiple buffer pools and assigning multiple table spaces to different buffer pools will increase the       performance?`
 
 * Transactions(Unit of Work)
 * Locks : Multiuser database. Locking strategy is specified by `isolation level` when binding the application
